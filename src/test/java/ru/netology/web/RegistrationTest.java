@@ -20,8 +20,8 @@ public class RegistrationTest {
         $("span[data-test-id='phone'] input").setValue("+79200000000");
         $("label[data-test-id='agreement']").click();
         $x("//span[@class='button__text']").click();
-        $(withText("Успешно!")).shouldBe(visible, Duration.ofSeconds(20));
-        $(byText("Встреча успешно забронирована на")).shouldBe(visible, Duration.ofSeconds(20));
-        $(byText("04.02.2023")).shouldBe(visible, Duration.ofSeconds(20));
+        $(withText("Успешно!")).shouldBe(visible, Duration.ofSeconds(15));
+        $(byText("Встреча успешно забронирована на")).shouldBe(visible, Duration.ofSeconds(15));
+        $(byText("04.02.2023")).shouldBe(visible, Duration.ofSeconds(15));
     }
 }
